@@ -4,9 +4,7 @@ echo "Please enter the number"
 read NUMBER
 
 if [ "$is_prime" -eq 1 ]; then
-   echo "Give number $NUMBER is prime"
+  echo "$num is a prime number."
 else
-echo "Given number $NUMBER is not a prime"
-
+  echo "$num is not a prime number."
 fi
-
