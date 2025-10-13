@@ -31,6 +31,7 @@ else
 }
 
 dnf list installed mysql &>>$LOG_FILE
+
 # Install if it is not found
 
 if [ $? -ne 0 ]; then
