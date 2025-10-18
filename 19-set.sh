@@ -3,7 +3,7 @@
 set -e
 
 error(){
-      echo "Tere is an error in #LINENO, Command is: $BASH_COMMAND"
+      echo "Tere is an error in $LINENO, Command is: $BASH_COMMAND"
 
 }
 trap error ERR
