@@ -21,7 +21,7 @@ if [ $USERID -ne 0 ]; then
 
 USAGE(){
 
-    echo "USAGE:: sudo sh 24-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS>[optional, defauld 14 days]"
+    echo -e "$R USAGE:: sudo sh 24-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS>[optional, defauld 14 days]"
     exit 1
 }
 if [ $# -lt 2 ]; then
