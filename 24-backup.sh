@@ -38,7 +38,7 @@ fi
 
 if [ ! -d $DEST_DIR ]; then
 echo -e "$R destination $DEST_DIR does not exist $N"
-exit 1
+exit 
 fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" -type f -mtime +14)
