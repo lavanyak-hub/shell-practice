@@ -6,7 +6,7 @@ DISK_THRESHOLD=2 # in projects we keep it as 75
 while IFS= read -r line
 do 
 USAGE=$(echo $line | awk '{print $6}' | cut -d "%" -f1)
-PARTISION=(echo $line | awk '{print $7}')
+PARTISION=$(echo $line | awk '{print $7}')
 if [ $USAGE -ge $DISK_THRESHOLD ]; then
 echo "High Usage on $PARTITION: $USAGE"
 fi
